@@ -58,26 +58,31 @@ Do not read the italicized screen directions aloud.
 > I’m excited to help you evaluate whether you could own those applications
 > internally, with Devin changing the economics of the build.
 
-*[Screen: Policy page, showing the assumptions banner and permission matrix]*
+*[Screen: Retool pricing page, showing the Business and Enterprise line
+items.]*
 
-> Retool’s visible value is tables, forms, and fast app construction. Its
-> harder-to-replace value is the governed platform: identity, permissions,
-> connectors, environments, deployment, and operational support.
+> Retool’s visible value is fast app construction. This pricing page shows the
+> harder-to-replace platform. Business includes audit logging, rich
+> permissions, and unlimited environments and modules. Enterprise adds SAML or
+> OpenID Connect SSO, source control, independent workspaces, APIs and workflow
+> triggers, and dedicated support.
 >
-> This prototype does not pretend to recreate that whole platform. It tests
-> whether these three fixed workflows can be custom-built with their important
-> controls enforced by the server.
+> Custom branding, portals and embedded apps, external-user pricing, AI
+> credits, and volume discounts affect packaging and price. But those
+> governance and operational capabilities are what a custom build must replace.
+>
+> This prototype does not claim to recreate all of that. It tests whether these
+> three fixed workflows can be custom-built with controls enforced server-side.
 
-*[Point to the $500 refund threshold, KYC cutoff of 70, permission matrix, and
-state machines.]*
+*[Switch to the Policy page. Point to the $500 refund threshold, KYC cutoff of
+70, permission matrix, and state machines.]*
 
-> These are not decorative values. The page renders the same version-controlled
-> policy that the API enforces: the permission matrix, state transitions, and
-> refund threshold.
+> Here, these are not decorative values. The page renders the same
+> version-controlled policy that the API enforces: the permission matrix, state
+> transitions, and refund threshold.
 
-> That single source of truth is the foundation for the rest of the demo. As I
-> walk through it, watch for explicit workflows, contextual permissions,
-> traceable decisions, and the API—not hidden buttons—as the security boundary.
+> As I walk through it, watch for explicit workflows, contextual permissions,
+> traceable decisions, and server-enforced security.
 
 ## SHOW — 1:10–3:50 — One continuous product walkthrough
 
@@ -85,8 +90,7 @@ state machines.]*
 
 *[Switch to Carlos Diaz · compliance, then open KYC Review.]*
 
-> First, KYC. The control I want to prove is that a reviewer cannot jump directly
-> from a new case to a terminal decision.
+> First, KYC: a reviewer cannot jump from a new case to a terminal decision.
 
 *[Point to Jordan Blake: status Pending, risk 82. Point out that the only actions
 are Start review and Escalate. Click Start review, then Approve.]*
@@ -105,8 +109,8 @@ then cancel it.]*
 
 *[Switch to Sam Okoro · support and open Refunds.]*
 
-> Next, refunds. Here I want to prove two contextual rules: nobody approves
-> their own request, and amounts over five hundred dollars require an admin.
+> Refunds prove two contextual rules: no self-approval, and amounts above five
+> hundred dollars require an admin.
 
 *[On Jordan Blake, $42 requested by Sam, click Approve.]*
 
@@ -128,9 +132,7 @@ processed.]*
 
 *[Open Feature Flags, still as Ana.]*
 
-> The third workflow proves controlled operational change: production changes
-> need more friction, valid values must be enforced, and every mutation must be
-> traceable.
+> Feature flags prove controlled, validated, and traceable operational change.
 
 *[On `instant_refunds`, toggle Production on. Pause on the confirmation dialog,
 then accept it. Set Staging rollout to 25 and press Enter. Open Audit Log.]*
