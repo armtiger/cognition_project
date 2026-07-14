@@ -77,18 +77,19 @@ Do not read the italicized screen directions aloud.
 *[Screen: Retool pricing page, showing the Business and Enterprise line
 items.]*
 
-> Retool’s visible value is fast app construction. This pricing page shows the
-> harder-to-replace platform. Business includes audit logging, rich
+> Retool’s value goes beyond app construction. This pricing page shows the
+> harder-to-replace features of the platform. Business includes audit logging, rich
 > permissions, and unlimited environments and modules. Enterprise adds SAML or
-> OpenID Connect SSO, source control, independent workspaces, APIs and workflow
-> triggers, and dedicated support.
->
-> Custom branding, portals and embedded apps, external-user pricing, AI
-> credits, and volume discounts affect packaging and price. But those
+> OIDC single sign on, source control, independent workspaces. Those
 > governance and operational capabilities are what a custom build must replace.
 >
-> This prototype does not claim to recreate all of that. It tests whether these
+> I will now demo a protortype built with Devin that tests whether these
 > three fixed workflows can be custom-built with controls enforced server-side.
+> The demo does not claim to recreate all of the requiered features. 
+
+## SHOW — 1:10–3:50 — One continuous product walkthrough
+
+### 1:10–1:30 — KYC: controlled state transitions
 
 *[Switch to the Policy page. Point to the $500 refund threshold, KYC cutoff of
 70, permission matrix, and state machines.]*
@@ -100,9 +101,7 @@ items.]*
 > As I walk through it, watch for explicit workflows, contextual permissions,
 > traceable decisions, and server-enforced security.
 
-## SHOW — 1:10–3:50 — One continuous product walkthrough
-
-### 1:10–1:50 — KYC: controlled state transitions
+### 1:30–2:10 — KYC: controlled state transitions
 
 *[Switch to Carlos Diaz · compliance, then open KYC Review.]*
 
@@ -121,7 +120,7 @@ then cancel it.]*
 > Escalation and rejection also require an attributed reason. The UI prompts for
 > it, and the API independently rejects an empty note.
 
-### 1:50–2:45 — Refunds: maker-checker and threshold policy
+### 2:10–2:55 — Refunds: maker-checker and threshold policy
 
 *[Switch to Sam Okoro · support and open Refunds.]*
 
@@ -144,7 +143,7 @@ processed.]*
 > Ana is a different approver, so she can approve the $42 request. Processing is
 > a separate action, and only after approval can she mark it processed.
 
-### 2:45–3:30 — Feature flags and auditability
+### 2:55–3:30 — Feature flags and auditability
 
 *[Open Feature Flags, still as Ana.]*
 
