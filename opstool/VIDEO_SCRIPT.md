@@ -58,26 +58,31 @@ Do not read the italicized screen directions aloud.
 > I’m excited to help you evaluate whether you could own those applications
 > internally, with Devin changing the economics of the build.
 
-*[Screen: Policy page, showing the assumptions banner and permission matrix]*
+*[Screen: Retool pricing page, showing the Business and Enterprise line
+items.]*
 
-> Retool’s visible value is tables, forms, and fast app construction. Its
-> harder-to-replace value is the governed platform: identity, permissions,
-> connectors, environments, deployment, and operational support.
+> Retool’s visible value is fast app construction. This pricing page shows the
+> harder-to-replace platform. Business includes audit logging, rich
+> permissions, and unlimited environments and modules. Enterprise adds SAML or
+> OpenID Connect SSO, source control, independent workspaces, APIs and workflow
+> triggers, and dedicated support.
 >
-> This prototype does not pretend to recreate that whole platform. It tests
-> whether these three fixed workflows can be custom-built with their important
-> controls enforced by the server.
+> Custom branding, portals and embedded apps, external-user pricing, AI
+> credits, and volume discounts affect packaging and price. But those
+> governance and operational capabilities are what a custom build must replace.
+>
+> This prototype does not claim to recreate all of that. It tests whether these
+> three fixed workflows can be custom-built with controls enforced server-side.
 
-*[Point to the $500 refund threshold, KYC cutoff of 70, permission matrix, and
-state machines.]*
+*[Switch to the Policy page. Point to the $500 refund threshold, KYC cutoff of
+70, permission matrix, and state machines.]*
 
-> These are not decorative values. The page renders the same version-controlled
-> policy that the API enforces: the permission matrix, state transitions, and
-> refund threshold.
+> Here, these are not decorative values. The page renders the same
+> version-controlled policy that the API enforces: the permission matrix, state
+> transitions, and refund threshold.
 
-> That single source of truth is the foundation for the rest of the demo. As I
-> walk through it, watch for explicit workflows, contextual permissions,
-> traceable decisions, and the API—not hidden buttons—as the security boundary.
+> As I walk through it, watch for explicit workflows, contextual permissions,
+> traceable decisions, and server-enforced security.
 
 ## SHOW — 1:10–3:50 — One continuous product walkthrough
 
@@ -85,8 +90,7 @@ state machines.]*
 
 *[Switch to Carlos Diaz · compliance, then open KYC Review.]*
 
-> First, KYC. The control I want to prove is that a reviewer cannot jump directly
-> from a new case to a terminal decision.
+> First, KYC: a reviewer cannot jump from a new case to a terminal decision.
 
 *[Point to Jordan Blake: status Pending, risk 82. Point out that the only actions
 are Start review and Escalate. Click Start review, then Approve.]*
@@ -105,8 +109,8 @@ then cancel it.]*
 
 *[Switch to Sam Okoro · support and open Refunds.]*
 
-> Next, refunds. Here I want to prove two contextual rules: nobody approves
-> their own request, and amounts over five hundred dollars require an admin.
+> Refunds prove two contextual rules: no self-approval, and amounts above five
+> hundred dollars require an admin.
 
 *[On Jordan Blake, $42 requested by Sam, click Approve.]*
 
@@ -128,9 +132,7 @@ processed.]*
 
 *[Open Feature Flags, still as Ana.]*
 
-> The third workflow proves controlled operational change: production changes
-> need more friction, valid values must be enforced, and every mutation must be
-> traceable.
+> Feature flags prove controlled, validated, and traceable operational change.
 
 *[On `instant_refunds`, toggle Production on. Pause on the confirmation dialog,
 then accept it. Set Staging rollout to 25 and press Enter. Open Audit Log.]*
@@ -158,21 +160,22 @@ then accept it. Set Staging rollout to 25 and press Enter. Open Audit Log.]*
 
 *[Switch to `ARCHITECTURE_SUMMARY.md`, production-gap table.]*
 
-> So what did this prove? The three application runtimes are replicable:
-> screens, state machines, contextual permissions, maker-checker rules, and
-> structured audit records.
+> So what did this prove? We can reproduce the three applications’ screens,
+> workflow rules, permissions, approval controls, and audit history.
 >
 > What it did not reproduce is Retool’s mature platform. The persona switcher is
-> not real OIDC or SCIM. SQLite is fixture storage, not a production database.
-> Refund processing changes a status rather than calling a payment service with
-> idempotency, webhooks, and reconciliation. Audit records still need
-> tamper-resistant storage and SIEM export. Deployment, monitoring, backups,
-> incident response, and a long-term owner are also outside this MVP.
+> not a real company login with automatic account setup and removal. The local
+> database contains demo data, not production records. Refund processing only
+> changes an on-screen status; it does not send money, prevent duplicate
+> processing, receive payment-provider updates, or match transactions against
+> financial records. Audit history still needs protected long-term storage and
+> integration with the company’s security monitoring tools. Deployment,
+> monitoring, backups, incident response, and a long-term owner are also
+> outside this MVP.
 >
-> End-to-end testing also found one small UI consistency defect: an invalid flag
-> percentage is safely rejected by the server, but the rejected draft remains
-> visible until reload. That is low risk, but it is exactly why a prototype is
-> evidence—not production readiness.
+> Testing also found one small display issue: an invalid percentage is safely
+> rejected, but the field still shows it until the page reloads. That is low
+> risk, but it is exactly why a prototype is evidence—not production readiness.
 
 ### 4:30–5:00 — Recommendation and close
 
@@ -183,10 +186,10 @@ then accept it. Set Staging rollout to 25 and press Enter. Open Audit Log.]*
 > validating the commercial options.
 >
 > If the economics still favor ownership, pilot the lower-risk feature-flag
-> panel or a read-only workflow with real SSO, production data adapters,
-> automated tests, and normal deployment controls. Reassess broader migration
-> only when the number of apps and a dedicated platform owner justify the
-> ongoing operational cost.
+> panel or a read-only workflow with a real company login, connections to
+> production systems, automated tests, and normal deployment controls. Reassess
+> broader migration only when the number of apps and a dedicated platform owner
+> justify the ongoing operational cost.
 >
 > Devin changes the cost and speed of implementation. It does not remove the
 > company’s responsibility to define, approve, and operate the controls. That is
