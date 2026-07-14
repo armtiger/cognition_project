@@ -1,8 +1,8 @@
 # OpsTool — Five-Minute Demo Script
 
 **Audience:** VP Engineering / technical leadership at a Series C fintech
-**Target duration:** 4:45–5:00
-**Spoken length:** approximately 725 words; about 4:45–5:00 with clicks and pauses
+**Target duration:** 5:00–5:20
+**Spoken length:** approximately 845 words; about 5:00–5:20 with clicks and pauses
 **Structure:** one overarching Tell → Show → Tell arc
 
 Do not read the italicized screen directions aloud.
@@ -177,23 +177,34 @@ then accept it. Set Staging rollout to 25 and press Enter. Open Audit Log.]*
 > rejected, but the field still shows it until the page reloads. That is low
 > risk, but it is exactly why a prototype is evidence—not production readiness.
 
-### 4:30–5:00 — Recommendation and close
+### 4:30–5:20 — Recommendation and close
 
 *[Stay on the architecture summary or return to talking head.]*
 
-> My recommendation is not a wholesale Retool replacement today. With only
-> three apps, keep KYC and refunds on the lower-risk managed platform while
-> validating the commercial options.
+> Do not replace Retool wholesale, and do not treat this as all-or-nothing. The
+> three apps carry very different risk. I would start with feature flags—no
+> customer data, no money movement—as a parallel internal build while KYC and
+> refunds stay on Retool.
 >
-> If the economics still favor ownership, pilot the lower-risk feature-flag
-> panel or a read-only workflow with a real company login, connections to
-> production systems, automated tests, and normal deployment controls. Reassess
-> broader migration only when the number of apps and a dedicated platform owner
-> justify the ongoing operational cost.
+> Downgrading from Enterprise to Business is only safe once the internal app
+> reproduces the controls Business drops. The key one is single sign-on with
+> automatic deprovisioning—when someone leaves, their access to KYC and refunds
+> must end immediately. The next tier is source control for reviewed, traceable
+> app changes, and separate workspaces for environment isolation and separation
+> of duties. Audit logging and permissions already exist in Business, which is
+> what makes the downgrade viable at all.
 >
-> Devin changes the cost and speed of implementation. It does not remove the
-> company’s responsibility to define, approve, and operate the controls. That is
-> the real build-versus-buy decision.
+> Once those are proven, downgrade to Business. At current annual prices, about
+> eight builders and 125 internal users in a 250-person company cost roughly
+> $27,000 a year, versus the current $250,000 contract—about $223,000 in gross
+> savings before the cost of owning the tools.
+>
+> Then migrate refunds, and KYC last given its regulatory exposure, only if the
+> numbers still hold—discontinuing Retool only at the end. Each step is
+> reversible.
+>
+> Devin lowers the cost and time to build, but not the responsibility for
+> security, support, and operations. That is the real build-versus-buy decision.
 
 ---
 
@@ -272,6 +283,8 @@ Use a fresh database before every complete take.
 - **Do not demo rollout 150:** the server correctly rejects it, but the current
   input keeps the rejected draft visible until reload. Mention the finding in
   the honest-assessment section instead.
+- **Verify pricing before recording:** the estimate assumes current annual
+  Business list prices of $50 per builder and $15 per internal user.
 - **If over time:** remove the optional Nadia escalation and shorten the
   production-gap list to SSO, payment integration, audit storage, and ownership.
 - **If under time:** pause longer on the audit log and explicitly connect each
