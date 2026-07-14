@@ -160,22 +160,22 @@ then accept it. Set Staging rollout to 25 and press Enter. Open Audit Log.]*
 
 *[Switch to `ARCHITECTURE_SUMMARY.md`, production-gap table.]*
 
-> So what did this prove? The three application runtimes are replicable:
-> screens, state machines, contextual permissions, maker-checker rules, and
-> structured audit records.
+> So what did this prove? We can reproduce the three applications’ screens,
+> workflow rules, permissions, approval controls, and audit history.
 >
 > What it did not reproduce is Retool’s mature platform. The persona switcher is
-> not real OIDC or SCIM. SQLite is fixture storage, not a production database.
-> Refund processing changes a status rather than calling a payment service with
-> protection against processing the same refund twice, webhooks, and
-> reconciliation. Audit records still need
-> tamper-resistant storage and SIEM export. Deployment, monitoring, backups,
-> incident response, and a long-term owner are also outside this MVP.
+> not a real company login with automatic account setup and removal. The local
+> database contains demo data, not production records. Refund processing only
+> changes an on-screen status; it does not send money, prevent duplicate
+> processing, receive payment-provider updates, or match transactions against
+> financial records. Audit history still needs protected long-term storage and
+> integration with the company’s security monitoring tools. Deployment,
+> monitoring, backups, incident response, and a long-term owner are also
+> outside this MVP.
 >
-> End-to-end testing also found one small UI consistency defect: an invalid flag
-> percentage is safely rejected by the server, but the rejected draft remains
-> visible until reload. That is low risk, but it is exactly why a prototype is
-> evidence—not production readiness.
+> Testing also found one small display issue: an invalid percentage is safely
+> rejected, but the field still shows it until the page reloads. That is low
+> risk, but it is exactly why a prototype is evidence—not production readiness.
 
 ### 4:30–5:00 — Recommendation and close
 
@@ -186,10 +186,10 @@ then accept it. Set Staging rollout to 25 and press Enter. Open Audit Log.]*
 > validating the commercial options.
 >
 > If the economics still favor ownership, pilot the lower-risk feature-flag
-> panel or a read-only workflow with real SSO, production data adapters,
-> automated tests, and normal deployment controls. Reassess broader migration
-> only when the number of apps and a dedicated platform owner justify the
-> ongoing operational cost.
+> panel or a read-only workflow with a real company login, connections to
+> production systems, automated tests, and normal deployment controls. Reassess
+> broader migration only when the number of apps and a dedicated platform owner
+> justify the ongoing operational cost.
 >
 > Devin changes the cost and speed of implementation. It does not remove the
 > company’s responsibility to define, approve, and operate the controls. That is
