@@ -196,13 +196,15 @@ then accept it. Set Staging rollout to 25 and press Enter. Open Audit Log.]*
 > whole workspace—you can’t buy it for KYC alone—so while any sensitive app
 > stays on Retool, you stay on Enterprise.
 >
-> Downgrading to Business is therefore the last step, safe only once KYC and
-> refunds have both moved onto the internal build, which carries its own single
-> sign-on. Then Business’s audit logging and permissions cover whatever remains,
-> and about eight builders and 125 users in a 250-person company cost roughly
-> $27,000 a year versus the current $250,000 contract—about $223,000 in gross
-> savings before the cost of ownership. Migrate KYC last, given its regulatory
-> exposure.
+> So the endgame is a single decision once KYC and refunds have both moved onto
+> the internal build—migrate KYC last, given its regulatory exposure. At that
+> point you either leave Retool entirely, or downgrade to Business for whatever
+> low-risk apps remain, since the internal build now carries its own single
+> sign-on and Business’s audit logging and permissions cover the rest. The
+> downgrade alone puts about eight builders and 125 users in a 250-person company
+> at roughly $27,000 a year versus the current $250,000 contract—about $223,000
+> in gross savings before the cost of ownership, and more if you leave Retool
+> altogether.
 >
 > Devin lowers the cost and time to build, not the responsibility for security,
 > support, and operations. That is the real build-versus-buy decision.
