@@ -80,7 +80,7 @@ export default function Policy({ userId, notify }) {
             <div className="panel-heading"><div><h2>{name.toUpperCase()} state machine</h2><p>Allowed transitions, enforced server-side.</p></div></div>
             <div className="state-list">
               {Object.entries(machine).map(([from, to]) => (
-                <div key={from}><code>{from}</code><span>→</span><p>{to.length ? to.map((v) => <code key={v}>{v}</code>) : <em>terminal</em>}</p></div>
+                <div key={from}><code>{from}</code><span>→</span><p>{to.length ? to.map((v) => <code key={v}>{v}</code>) : <em>finished</em>}</p></div>
               ))}
             </div>
           </section>

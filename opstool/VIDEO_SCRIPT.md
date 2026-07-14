@@ -103,14 +103,14 @@ items.]*
 
 *[Switch to Carlos Diaz · compliance, then open KYC Review.]*
 
-> First, KYC: a reviewer cannot jump from a new case to a terminal decision.
+> First, KYC: a reviewer cannot jump from a new case to a finished decision.
 
 *[Point to Jordan Blake: status Pending, risk 82. Point out that the only actions
 are Start review and Escalate. Click Start review, then Approve.]*
 
 > On this pending case there is no Approve or Reject action. Carlos must start
 > review first. Once the case is in review, approval becomes available, and the
-> case can move to its terminal state.
+> case can move to its finished state.
 
 *[Optionally click Escalate on Nadia Ivanova, show the required-reason prompt,
 then cancel it.]*
@@ -229,7 +229,7 @@ Use a fresh database before every complete take.
 6. Locate **Jordan Blake**, risk **82**, status **Pending**.
 7. Point out **Start review** and **Escalate**, with no direct Approve/Reject.
 8. Click **Start review**; wait for status **In review**.
-9. Click **Approve**; wait for status **Approved** and action **Terminal**.
+9. Click **Approve**; wait for status **Approved** and action **Finished**.
 10. Optional: on **Nadia Ivanova**, click **Escalate**, pause on the
     reason-required prompt, then cancel. Nadia remains Pending.
 

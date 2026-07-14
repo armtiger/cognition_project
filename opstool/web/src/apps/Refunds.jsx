@@ -105,7 +105,7 @@ export default function Refunds({ userId, permissions, notify }) {
                         {item.status === 'approved' && (
                           <button className="button small primary" disabled={!canProcess} onClick={() => process(item)}>Mark processed</button>
                         )}
-                        {['processed', 'rejected'].includes(item.status) && <span className="muted">Terminal</span>}
+                        {['processed', 'rejected'].includes(item.status) && <span className="muted">Finished</span>}
                       </div>
                     </td>
                   </tr>
