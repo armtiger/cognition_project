@@ -186,24 +186,27 @@ then accept it. Set Staging rollout to 25 and press Enter. Open Audit Log.]*
 
 *[Stay on the architecture summary or return to talking head.]*
 
-> My recommendation: don’t replace Retool wholesale, and don’t treat the price
-> as a gradual dial. Migration can be incremental—start with feature flags, no
-> customer data or money, as a parallel internal build while KYC and refunds
-> stay on Retool. But the saving is a single cliff, not a slider. SAML single
-> sign-on with automatic deprovisioning is Enterprise-only and applies to the
-> whole workspace—you can’t buy it for KYC alone—so while any sensitive app
+> My recommendation is not to replace Retool wholesale, and not to treat the
+> price as a gradual dial. Migration can be incremental. Start with feature
+> flags. They carry no customer data and no money, so you can build them
+> internally while KYC and refunds stay on Retool.
+>
+> But the cost saving is a single cliff, not a slider. Single sign-on with
+> automatic deprovisioning is Enterprise-only, and it applies to the whole
+> workspace. You cannot buy it for KYC alone. So as long as any sensitive app
 > stays on Retool, you stay on Enterprise.
 >
-> So the endgame is a single decision once KYC and refunds have both moved onto
-> the internal build—migrate KYC last, given its regulatory exposure. At that
-> point you either leave Retool entirely, or downgrade to Business for whatever
-> low-risk apps remain, since the internal build now carries its own single
-> sign-on and Business’s audit logging and permissions cover the rest. The
-> downgrade alone puts about eight builders and 125 users in a 250-person company
-> at roughly $27,000 a year versus the current $250,000 contract.
+> The real saving comes only after KYC and refunds have both moved onto the
+> internal build. Migrate KYC last, because of its regulatory exposure. Then you
+> either leave Retool entirely, or downgrade to Business for the low-risk apps
+> that remain. The downgrade alone takes a 250-person company from about
+> $250,000 a year to roughly $27,000.
 >
-> Devin lowers the cost and time to build, not the responsibility for security,
-> support, and operations. That is the real build-versus-buy decision.
+> Devin lowers the cost and time to build. It does not lower the responsibility
+> for security, support, and operations. That is the real build-versus-buy
+> decision.
+>
+> Thank you for your attention. I hope this was useful.
 
 ---
 
