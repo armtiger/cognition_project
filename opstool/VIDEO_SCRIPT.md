@@ -9,33 +9,49 @@ Do not read the italicized screen directions aloud.
 
 ## Before recording
 
-1. From the repository root, install dependencies and reset the fixtures:
+1. From the repository root, verify Node and install dependencies. Run this
+   during initial setup and whenever `package-lock.json` changes:
 
    ```bash
    cd opstool
    node -v   # requires v24.x
    npm ci --include=optional
+   ```
+
+   On an Apple Silicon Mac, npm may still omit Rolldown's native package. Run
+   this immediately after every fresh `npm ci`:
+
+   ```bash
+   npm install --no-save --package-lock=false --include=optional \
+     @rolldown/binding-darwin-arm64@1.1.5
+   ```
+
+   You do not need to repeat either install command for an ordinary restart.
+
+2. Before every complete recording, reset the fixtures:
+
+   ```bash
    rm -f server/opstool.db*
    ```
 
-2. Start the API in terminal 1:
+3. Start the API in terminal 1:
 
    ```bash
    ALLOW_INSECURE_DEMO_AUTH=true npm run api
    ```
 
-3. Start the web app in terminal 2:
+4. Start the web app in terminal 2:
 
    ```bash
    cd opstool
    npm run web
    ```
 
-4. Open `http://localhost:5173` in a wide browser window.
-5. Start on **Policy**, signed in as **Ana Ramirez · admin**.
-6. Open `ARCHITECTURE_SUMMARY.md` in a second tab, pre-scrolled to
+5. Open `http://localhost:5173` in a wide browser window.
+6. Start on **Policy**, signed in as **Ana Ramirez · admin**.
+7. Open `ARCHITECTURE_SUMMARY.md` in a second tab, pre-scrolled to
    **Deliberate shortcuts and production gap**.
-7. Rehearse the exact clicks in the run sheet below. The script is intentionally
+8. Rehearse the exact clicks in the run sheet below. The script is intentionally
    selective; do not attempt to demonstrate every screen.
 
 ---
