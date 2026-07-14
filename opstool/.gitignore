@@ -1,0 +1,6 @@
+node_modules/
+server/opstool.db
+server/opstool.db-shm
+server/opstool.db-wal
+dist/
+*.log
