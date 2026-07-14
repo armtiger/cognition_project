@@ -178,13 +178,11 @@ then accept it. Set Staging rollout to 25 and press Enter. Open Audit Log.]*
 > So what did this prove? We reproduced the three apps’ screens, workflow rules,
 > permissions, approval controls, and audit history.
 >
-> What it did not reproduce is Retool’s mature platform: the persona switcher
-> isn’t a real company login with automatic account removal, the database holds
-> demo data, and refund processing only changes an on-screen status—it moves no
-> money and reconciles nothing. Audit history still needs protected storage and
-> security-monitoring integration, and deployment, backups, incident response,
-> and a long-term owner are all outside this MVP. A prototype is evidence, not
-> production readiness.
+> What it did not reproduce is Retool’s mature platform. The persona switcher
+> isn’t a real company login, the data is demo data, and refund processing moves
+> no money. Real production still needs hardened auth, payment integration, and
+> the usual operational ownership. A prototype is evidence, not production
+> readiness.
 
 ### 4:15–4:50 — Recommendation and close
 
