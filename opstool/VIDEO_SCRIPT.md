@@ -2,7 +2,7 @@
 
 **Audience:** VP Engineering / technical leadership at a Series C fintech
 **Target duration:** 5:00–5:20
-**Spoken length:** approximately 845 words; about 5:00–5:20 with clicks and pauses
+**Spoken length:** approximately 730 words; about 4:30–4:50 with clicks and pauses
 **Structure:** one overarching Tell → Show → Tell arc
 
 Do not read the italicized screen directions aloud.
@@ -169,57 +169,43 @@ then accept it. Set Staging rollout to 25 and press Enter. Open Audit Log.]*
 > remain visible, but every control is disabled and the page is clearly marked
 > read-only. Vera can also view the Policy page so the rules are transparent.
 
-## TELL — 3:50–5:00 — What the evidence means
+## TELL — 3:50–4:50 — What the evidence means
 
-### 3:50–4:30 — Honest production assessment
+### 3:50–4:15 — Honest production assessment
 
 *[Switch to `ARCHITECTURE_SUMMARY.md`, production-gap table.]*
 
-> So what did this prove? We can reproduce the three applications’ screens,
-> workflow rules, permissions, approval controls, and audit history.
+> So what did this prove? We reproduced the three apps’ screens, workflow rules,
+> permissions, approval controls, and audit history.
 >
-> What it did not reproduce is Retool’s mature platform. The persona switcher is
-> not a real company login with automatic account setup and removal. The local
-> database contains demo data, not production records. Refund processing only
-> changes an on-screen status; it does not send money, prevent duplicate
-> processing, receive payment-provider updates, or match transactions against
-> financial records. Audit history still needs protected long-term storage and
-> integration with the company’s security monitoring tools. Deployment,
-> monitoring, backups, incident response, and a long-term owner are also
-> outside this MVP.
->
-> Testing also found one small display issue: an invalid percentage is safely
-> rejected, but the field still shows it until the page reloads. That is low
-> risk, but it is exactly why a prototype is evidence—not production readiness.
+> What it did not reproduce is Retool’s mature platform. The persona switcher
+> isn’t a real company login, the data is demo data, and refund processing moves
+> no money. Real production still needs hardened auth, payment integration, and
+> the usual operational ownership. A prototype is evidence, not production
+> readiness.
 
-### 4:30–5:20 — Recommendation and close
+### 4:15–4:50 — Recommendation and close
 
 *[Stay on the architecture summary or return to talking head.]*
 
-> Do not replace Retool wholesale, and do not treat this as all-or-nothing. The
-> three apps carry very different risk. I would start with feature flags—no
-> customer data, no money movement—as a parallel internal build while KYC and
-> refunds stay on Retool.
+> My recommendation: don’t replace Retool wholesale, and don’t treat the price
+> as a gradual dial. Migration can be incremental—start with feature flags, no
+> customer data or money, as a parallel internal build while KYC and refunds
+> stay on Retool. But the saving is a single cliff, not a slider. SAML single
+> sign-on with automatic deprovisioning is Enterprise-only and applies to the
+> whole workspace—you can’t buy it for KYC alone—so while any sensitive app
+> stays on Retool, you stay on Enterprise.
 >
-> Downgrading from Enterprise to Business is only safe once the internal app
-> reproduces the controls Business drops. The key one is single sign-on with
-> automatic deprovisioning—when someone leaves, their access to KYC and refunds
-> must end immediately. The next tier is source control for reviewed, traceable
-> app changes, and separate workspaces for environment isolation and separation
-> of duties. Audit logging and permissions already exist in Business, which is
-> what makes the downgrade viable at all.
+> So the endgame is a single decision once KYC and refunds have both moved onto
+> the internal build—migrate KYC last, given its regulatory exposure. At that
+> point you either leave Retool entirely, or downgrade to Business for whatever
+> low-risk apps remain, since the internal build now carries its own single
+> sign-on and Business’s audit logging and permissions cover the rest. The
+> downgrade alone puts about eight builders and 125 users in a 250-person company
+> at roughly $27,000 a year versus the current $250,000 contract.
 >
-> Once those are proven, downgrade to Business. At current annual prices, about
-> eight builders and 125 internal users in a 250-person company cost roughly
-> $27,000 a year, versus the current $250,000 contract—about $223,000 in gross
-> savings before the cost of owning the tools.
->
-> Then migrate refunds, and KYC last given its regulatory exposure, only if the
-> numbers still hold—discontinuing Retool only at the end. Each step is
-> reversible.
->
-> Devin lowers the cost and time to build, but not the responsibility for
-> security, support, and operations. That is the real build-versus-buy decision.
+> Devin lowers the cost and time to build, not the responsibility for security,
+> support, and operations. That is the real build-versus-buy decision.
 
 ---
 
