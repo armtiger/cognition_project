@@ -202,8 +202,7 @@ then accept it. Set Staging rollout to 25 and press Enter. Open Audit Log.]*
 > low-risk apps remain, since the internal build now carries its own single
 > sign-on and Business’s audit logging and permissions cover the rest. The
 > downgrade alone puts about eight builders and 125 users in a 250-person company
-> at roughly $27,000 a year versus the current $250,000 contract, and more if you
-> leave Retool altogether.
+> at roughly $27,000 a year versus the current $250,000 contract.
 >
 > Devin lowers the cost and time to build, not the responsibility for security,
 > support, and operations. That is the real build-versus-buy decision.
