@@ -167,7 +167,8 @@ then accept it. Set Staging rollout to 25 and press Enter. Open Audit Log.]*
 > What it did not reproduce is Retool’s mature platform. The persona switcher is
 > not real OIDC or SCIM. SQLite is fixture storage, not a production database.
 > Refund processing changes a status rather than calling a payment service with
-> idempotency, webhooks, and reconciliation. Audit records still need
+> protection against processing the same refund twice, webhooks, and
+> reconciliation. Audit records still need
 > tamper-resistant storage and SIEM export. Deployment, monitoring, backups,
 > incident response, and a long-term owner are also outside this MVP.
 >
