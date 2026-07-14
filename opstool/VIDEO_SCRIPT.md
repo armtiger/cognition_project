@@ -1,8 +1,8 @@
 # OpsTool — Five-Minute Demo Script
 
 **Audience:** VP Engineering / technical leadership at a Series C fintech
-**Target duration:** 4:45–5:00
-**Spoken length:** approximately 725 words; about 4:45–5:00 with clicks and pauses
+**Target duration:** 5:00–5:20
+**Spoken length:** approximately 845 words; about 5:00–5:20 with clicks and pauses
 **Structure:** one overarching Tell → Show → Tell arc
 
 Do not read the italicized screen directions aloud.
@@ -177,24 +177,33 @@ then accept it. Set Staging rollout to 25 and press Enter. Open Audit Log.]*
 > rejected, but the field still shows it until the page reloads. That is low
 > risk, but it is exactly why a prototype is evidence—not production readiness.
 
-### 4:30–5:00 — Recommendation and close
+### 4:30–5:20 — Recommendation and close
 
 *[Stay on the architecture summary or return to talking head.]*
 
-> Do not replace Retool wholesale. First, audit actual usage and test whether
-> Business meets the company’s security needs.
+> Do not replace Retool wholesale, and do not treat this as all-or-nothing. The
+> three apps carry very different risk. I would start with feature flags—no
+> customer data, no money movement—as a parallel internal build while KYC and
+> refunds stay on Retool.
 >
-> At current annual Business prices, eight builders and 125 internal users in a
-> 250-person company would cost about $27,000 a year. Against the current
-> $250,000 contract, that is roughly $223,000 in gross annual savings before
-> custom-tool ownership costs.
+> Downgrading from Enterprise to Business is only safe once the internal app
+> reproduces the controls Business drops. The key one is single sign-on with
+> automatic deprovisioning—when someone leaves, their access to KYC and refunds
+> must end immediately. The next tier is source control for reviewed, traceable
+> app changes, and separate workspaces for environment isolation and separation
+> of duties. Audit logging and permissions already exist in Business, which is
+> what makes the downgrade viable at all.
 >
-> Downgrade only if Enterprise’s centralized company login, source control,
-> separate workspaces, integrations, and dedicated support are not required.
-> Otherwise, renegotiate Enterprise and migrate a lower-risk workflow
-> selectively.
+> Once those are proven, downgrade to Business. At current annual prices, about
+> eight builders and 125 internal users in a 250-person company cost roughly
+> $27,000 a year, versus the current $250,000 contract—about $223,000 in gross
+> savings before the cost of owning the tools.
 >
-> Devin lowers implementation cost and time, but not the responsibility for
+> Then migrate refunds, and KYC last given its regulatory exposure, only if the
+> numbers still hold—discontinuing Retool only at the end. Each step is
+> reversible.
+>
+> Devin lowers the cost and time to build, but not the responsibility for
 > security, support, and operations. That is the real build-versus-buy decision.
 
 ---
