@@ -1,0 +1,27 @@
+{
+  "name": "opstool",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Internal-tools prototype (Retool build-vs-buy exercise): KYC queue, refunds dashboard, feature-flag admin, with server-side RBAC + audit.",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "api": "node server/index.js",
+    "web": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "acceptance": "node server/acceptance.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "8.1.3"
+  }
+}
