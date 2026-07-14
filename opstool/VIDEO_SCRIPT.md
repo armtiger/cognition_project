@@ -62,15 +62,13 @@ Do not read the italicized screen directions aloud.
 
 > Hi, I’m Tigran, a deployed engineer at Cognition. Before this, I spent six
 > years in AI product and research roles at fintech startups—as a founder and
-> as head of research—and before that, five years at institutional hedge funds
-> in London and Geneva.
+> as head of research— and before that I worked five years at institutional hedge funds.
 >
-> For anyone new here, Cognition builds Devin, the AI software engineer:
-> autonomous agents you can delegate end-to-end software tasks to, used at
+> For anyone new here, Cognition builds Devin, the AI software engineer used at
 > institutions including Goldman Sachs and Citi.
 >
-> You currently spend about $250,000 a year on Retool Enterprise to support
-> three applications: KYC review, refunds, and feature-flag administration.
+> In our last meeting you mentioned you currently spend about $250,000 a year on
+> Retool to support three apps: KYC review, refunds, and feature-flag admin.
 > I’m excited to help you evaluate whether you could own those applications
 > internally, with Devin changing the economics of the build.
 
