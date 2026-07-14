@@ -181,19 +181,21 @@ then accept it. Set Staging rollout to 25 and press Enter. Open Audit Log.]*
 
 *[Stay on the architecture summary or return to talking head.]*
 
-> My recommendation is not a wholesale Retool replacement today. With only
-> three apps, keep KYC and refunds on the lower-risk managed platform while
-> validating the commercial options.
+> Do not replace Retool wholesale. First, audit actual usage and test whether
+> Business meets the company’s security needs.
 >
-> If the economics still favor ownership, pilot the lower-risk feature-flag
-> panel or a read-only workflow with a real company login, connections to
-> production systems, automated tests, and normal deployment controls. Reassess
-> broader migration only when the number of apps and a dedicated platform owner
-> justify the ongoing operational cost.
+> At current annual Business prices, eight builders and 125 internal users in a
+> 250-person company would cost about $27,000 a year. Against the current
+> $250,000 contract, that is roughly $223,000 in gross annual savings before
+> custom-tool ownership costs.
 >
-> Devin changes the cost and speed of implementation. It does not remove the
-> company’s responsibility to define, approve, and operate the controls. That is
-> the real build-versus-buy decision.
+> Downgrade only if Enterprise’s centralized company login, source control,
+> separate workspaces, integrations, and dedicated support are not required.
+> Otherwise, renegotiate Enterprise and migrate a lower-risk workflow
+> selectively.
+>
+> Devin lowers implementation cost and time, but not the responsibility for
+> security, support, and operations. That is the real build-versus-buy decision.
 
 ---
 
@@ -272,6 +274,8 @@ Use a fresh database before every complete take.
 - **Do not demo rollout 150:** the server correctly rejects it, but the current
   input keeps the rejected draft visible until reload. Mention the finding in
   the honest-assessment section instead.
+- **Verify pricing before recording:** the estimate assumes current annual
+  Business list prices of $50 per builder and $15 per internal user.
 - **If over time:** remove the optional Nadia escalation and shorten the
   production-gap list to SSO, payment integration, audit storage, and ownership.
 - **If under time:** pause longer on the audit log and explicitly connect each
