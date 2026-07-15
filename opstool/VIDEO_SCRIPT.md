@@ -134,11 +134,11 @@ Do not read the italicized screen directions aloud.
 
 ### 3:30–3:50 — Least privilege
 
-> Finally, a viewer should see only what their job requires.
+> Finally, sensitive information should only be exposed to users who need that
+> information for their job.
 
-> KYC returns a server-side 403 rather than exposing customer data. Feature flags
-> remain visible, but nothing can be edited. Vera can also view the Policy page so
-> the rules are transparent.
+> Here, KYC and Refunds return a server-side 403 rather than exposing confidential
+> data to the user, and feature flags cannot be edited.
 
 ## TELL — 3:50–4:50 — What the evidence means
 
@@ -244,13 +244,14 @@ Use a fresh database before every complete take.
 
 26. Switch persona to **Vera Lin · viewer**.
 27. Open **KYC Review**; pause on `403 PERMISSION_DENIED`.
-28. Open **Feature Flags**; point to **READ ONLY** and disabled inputs.
-29. Open **Policy**; show that governance remains visible.
+28. Open **Refunds**; pause on `403 PERMISSION_DENIED`.
+29. Open **Feature Flags**; point to **READ ONLY** and disabled inputs.
+30. Open **Policy**; show that governance remains visible.
 
 ## Architecture and recommendation
 
-30. Switch to the second tab with `ARCHITECTURE_SUMMARY.md`.
-31. Point to the production-gap table while delivering the final assessment.
+31. Switch to the second tab with `ARCHITECTURE_SUMMARY.md`.
+32. Point to the production-gap table while delivering the final assessment.
 
 ---
 
