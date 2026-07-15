@@ -200,7 +200,8 @@ then accept it. Set Staging rollout to 25 and press Enter. Open Audit Log.]*
 > internal build. Migrate KYC last, because of its regulatory exposure. Then you
 > either leave Retool entirely, or downgrade to Business for the low-risk apps
 > that remain. The downgrade alone takes a 250-person company from about
-> $250,000 a year to roughly $27,000.
+> $250,000 a year to somewhere between $25,000 and $50,000, depending on the
+> number of builders and standard users.
 >
 > Devin lowers the cost and time to build. It does not lower the responsibility
 > for security, support, and operations. That is the real build-versus-buy
