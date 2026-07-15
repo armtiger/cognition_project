@@ -165,9 +165,10 @@ older version, and try to save a change.]*
 
 *[Open Audit Log.]*
 
-> And every change is traceable. In the audit log each edit is an
-> actor-attributed record with structured before-and-after values. The earlier
-> refund denials are logged too, including the policy code and amount.
+> And every change is traceable. The audit log is append-only, so records can be
+> added but never edited or deleted. Each edit is an actor-attributed record with
+> structured before-and-after values. The earlier refund denials are logged too,
+> including the policy code and amount.
 
 ### 3:30–3:50 — Least privilege
 
