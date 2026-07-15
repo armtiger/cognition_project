@@ -122,7 +122,7 @@ export default function KycQueue({ userId, permissions, notify }) {
                             {label}
                           </button>
                         ))}
-                        {!ACTIONS[item.status] && <span className="muted">Finished</span>}
+                        {!ACTIONS[item.status] && <span className="muted">Completed</span>}
                       </div>
                     </td>
                   </tr>
