@@ -135,11 +135,12 @@ then cancel it.]*
 > This request was created by somebody else, but it exceeds the threshold. Sam
 > is still blocked with `ADMIN_APPROVAL_REQUIRED`.
 
-*[Switch to Ana Ramirez · admin. Approve Jordan Blake, then click Mark
-processed.]*
+*[Switch to Ana Ramirez · admin. On Aya Suzuki, $630 requested by Sam, click
+Approve, then click Mark processed.]*
 
-> Ana is a different approver, so she can approve the $42 request. Processing is
-> a separate action, and only after approval can she mark it processed.
+> Ana is an admin and a different approver, so she clears both rules and approves
+> this $630 request, which is above the threshold. Processing is a separate
+> action, and only after approval can she mark it processed.
 
 ### 2:55–3:30 — Feature flags and auditability
 
@@ -257,7 +258,8 @@ Use a fresh database before every complete take.
 15. On **Mina Patel**, **$1,299.00**, requested by Ana, click **Approve**.
 16. Pause on `ADMIN_APPROVAL_REQUIRED`; status remains Requested.
 17. Switch persona to **Ana Ramirez · admin**.
-18. On Jordan Blake, click **Approve**, then **Mark processed**.
+18. On **Aya Suzuki**, **$630.00**, requested by Sam, click **Approve**, then
+    **Mark processed**.
 19. Confirm status **Processed** and Processed count increases from 1 to 2.
 
 ## Feature flags and audit
