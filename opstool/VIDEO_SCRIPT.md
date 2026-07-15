@@ -201,22 +201,23 @@ older version, and try to save a change.]*
 > incremental — start with feature flags. They carry no customer data and no
 > money, so you can build them internally while KYC and refunds stay on Retool.
 >
-> Single sign-on with automatic deprovisioning is Enterprise-only, and it applies
-> to the whole workspace. You cannot buy it for KYC alone. So as long as any
-> sensitive app stays on Retool, you might have to stay on Enterprise.
+> Single sign-on with automatic deprovisioning is Enterprise-only and applies to
+> the whole workspace, not per app. So as long as any sensitive app stays on
+> Retool, you might have to stay on Enterprise.
 >
 > The real saving comes only after KYC and refunds have both moved onto the
 > internal build. Migrate KYC last, because of its regulatory exposure. Then you
 > either leave Retool entirely, or downgrade to Business for low-risk apps. The
-> downgrade alone takes a 250-person company from about $250,000 a year to
-> somewhere between $25,000 and $50,000, depending on the
-> number of builders and standard users.
+> downgrade would take your company from about $250,000 a year to somewhere
+> between $25,000 and $50,000, depending on the number of builders and standard
+> users.
 >
-> Devin can help lower the cost significantly while reducing the time to build
-> and own your apps. Ownership also means no lock-in to a third-party vendor and
-> native integration with your own systems — not just a lower bill. But it shifts
-> the responsibility for security, support, and operations onto you. That is the
-> real build-versus-buy decision.
+> In conclusion, ownership of your apps does shift the responsibility for
+> security, support, and operations onto you. If you're ok with that, Devin can
+> help lower your cost significantly while reducing the developer time to build
+> and maintain your apps. Ownership also means native integration with your own
+> systems and no lock-in to a third-party vendor. If you decide to pursue that
+> path, we at Cognition are committed to helping you along the way.
 >
 > Thank you for your attention. I hope this was useful.
 
