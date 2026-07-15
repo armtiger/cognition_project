@@ -90,19 +90,19 @@ Do not read the italicized screen directions aloud.
 
 ### 1:30–2:10 — KYC: controlled state transitions
 
-> First, let's review KYC. One rule here is that new cases cannot get approved or
-> rejected right away. The reviewer can either start a review or escalate.
-
-> Once the case is in review, approval becomes available, and the case can move
-> to its finished state.
+> First, let's review KYC. Carlos, who works in compliance, is on the KYC
+> dashboard. One rule here is that he cannot approve or reject cases right away.
+> He must either start a review or escalate. Once the case is in review, approval
+> becomes available, and the case can move to its finished state.
 
 > Escalation and rejection also require an attributed reason. The UI prompts for
 > it, and the API independently rejects an empty note.
 
 ### 2:10–2:55 — Refunds: maker-checker and threshold policy
 
-> Refunds prove two contextual rules: no self-approval, and amounts above five
-> hundred dollars require an admin.
+> Next, let's navigate to the refunds dashboard in the profile of Sam from
+> support. The build has two contextual rules: no self-approval, and amounts
+> above five hundred dollars requiring an admin.
 
 > Sam requested this refund, so the server returns
 > `REQUESTER_CANNOT_APPROVE` and leaves it unchanged when he tries to approve.
@@ -116,19 +116,20 @@ Do not read the italicized screen directions aloud.
 
 ### 2:55–3:30 — Feature flags and auditability
 
-> Feature flags prove controlled, validated, and traceable operational change.
+> Next, the feature flags workflow enforces controlled, validated, and traceable
+> operational change.
 
 > Each environment is controlled on its own, so you can ship to staging without
 > touching production.
 
-> Writes are guarded against collisions. After a change was made in a parallel
-> session, this second tab is still holding the previous version. So the server
-> rejects it with a stale-version conflict rather than silently overwriting the
-> first edit.
+> Writes are guarded against collisions. As an example, let's change the rollout
+> value in this session, and try to make a change in a parallel session which is
+> still on the previous version. The server rejects it with a stale-version
+> conflict rather than silently overwriting the first edit.
 
 > And every change is traceable. The audit log is append-only, so records can be
-> added but never edited or deleted. Each edit is an actor-attributed record with
-> structured before-and-after values. The earlier refund denials are logged too,
+> added but never edited or deleted. Each edit is a record with structured
+> before-and-after values. The earlier refund denials are logged as well,
 > including the policy code and amount.
 
 ### 3:30–3:50 — Least privilege
