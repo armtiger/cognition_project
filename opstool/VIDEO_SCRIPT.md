@@ -214,12 +214,13 @@ older version, and try to save a change.]*
 > either leave Retool entirely, or downgrade to Business for low-risk apps. The
 > downgrade alone takes a 250-person company from about $250,000 a year to
 > somewhere between $25,000 and $50,000, depending on the
-> number of builders and standard users. Owning it also means no lock-in and
-> native integration with your own systems — not just a lower bill.
+> number of builders and standard users.
 >
-> Devin lowers the cost and time to build. It does not lower the responsibility
-> for security, support, and operations. That is the real build-versus-buy
-> decision.
+> Devin can help lower the cost significantly while reducing the time to build
+> and own your apps. Ownership also means no lock-in to a third-party vendor and
+> native integration with your own systems — not just a lower bill. But it shifts
+> the responsibility for security, support, and operations onto you. That is the
+> real build-versus-buy decision.
 >
 > Thank you for your attention. I hope this was useful.
 
