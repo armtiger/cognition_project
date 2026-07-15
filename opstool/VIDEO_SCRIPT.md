@@ -103,7 +103,8 @@ items.]*
 
 *[Switch to Carlos Diaz · compliance, then open KYC Review.]*
 
-> First, KYC: a reviewer cannot jump from a new case to a finished decision.
+> First, let's review KYC. One rule here is that new cases cannot get approved or
+> rejected right away. The reviewer can either start a review or escalate.
 
 *[Point to Jordan Blake: status Pending, risk 82. Point out that the only actions
 are Start review and Escalate. Click Start review, then Approve.]*
@@ -138,9 +139,9 @@ then cancel it.]*
 *[Switch to Ana Ramirez · admin. On Aya Suzuki, $630 requested by Sam, click
 Approve, then click Mark processed.]*
 
-> Ana is an admin and a different approver, so she clears both rules and approves
-> this $630 request, which is above the threshold. Processing is a separate
-> action, and only after approval can she mark it processed.
+> Ana is an admin and a different approver, so she can approve this $630 request,
+> which is above the threshold. Processing is a separate action, and only after
+> approval can she mark it processed.
 
 ### 2:55–3:30 — Feature flags and auditability
 
