@@ -176,8 +176,8 @@ older version, and try to save a change.]*
 > Finally, a viewer should see only what their job requires.
 
 > KYC returns a server-side 403 rather than exposing customer data. Feature flags
-> remain visible, but every control is disabled and the page is clearly marked
-> read-only. Vera can also view the Policy page so the rules are transparent.
+> remain visible, but nothing can be edited. Vera can also view the Policy page so
+> the rules are transparent.
 
 ## TELL — 3:50–4:50 — What the evidence means
 
@@ -245,7 +245,7 @@ Use a fresh database before every complete take.
 6. Locate **Jordan Blake**, risk **82**, status **Pending**.
 7. Point out **Start review** and **Escalate**, with no direct Approve/Reject.
 8. Click **Start review**; wait for status **In review**.
-9. Click **Approve**; wait for status **Approved** and action **Finished**.
+9. Click **Approve**; wait for status **Approved** and action **Completed**.
 10. Optional: on **Nadia Ivanova**, click **Escalate**, pause on the
     reason-required prompt, then cancel. Nadia remains Pending.
 

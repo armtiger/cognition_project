@@ -71,12 +71,12 @@ export default function Flags({ userId, permissions, notify }) {
                         <i />
                       </label>
                     </div>
-                    <label className="rollout">
+                    <label className={`rollout ${item[`enabled_${key}`] ? '' : 'disabled'}`}>
                       Rollout
-                      <span>
+                      <span title={item[`enabled_${key}`] ? undefined : 'Enable this environment to set a rollout'}>
                         <RolloutInput
                           value={item[`rollout_pct_${key}`]}
-                          disabled={!canWrite}
+                          disabled={!canWrite || !item[`enabled_${key}`]}
                           onCommit={(value) => update(item, `rollout_pct_${key}`, value)}
                         />
                         %

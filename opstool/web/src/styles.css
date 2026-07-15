@@ -130,6 +130,7 @@ td small { display: block; color: #8a95a5; font-size: 9.5px; margin-top: 3px; }
 .switch input:checked + i::after { left: 14px; }
 .switch input:disabled + i { opacity: .55; }
 .rollout { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; font-size: 9px; color: #8993a2; }
+.rollout.disabled { opacity: .5; }
 .rollout span { display: flex; align-items: center; gap: 2px; }
 .rollout input { width: 42px; padding: 3px; text-align: right; border: 1px solid #dce1e7; border-radius: 4px; font-size: 10px; color: #354155; }
 
