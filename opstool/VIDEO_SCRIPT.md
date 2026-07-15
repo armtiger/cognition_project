@@ -83,7 +83,7 @@ items.]*
 >
 > I will now demo a protortype built with Devin that tests whether these
 > three fixed workflows can be custom-built with controls enforced server-side.
-> The demo does not claim to recreate all of the requiered features. 
+> The demo does not claim to recreate all of the required features. 
 
 ## SHOW — 1:10–3:50 — One continuous product walkthrough
 
@@ -191,9 +191,10 @@ older version, and try to save a change.]*
 >
 > What we did not reproduce is Retool’s mature platform. The persona switcher
 > isn’t a real company login, the data is demo data, and refund processing moves
-> no money. Real production still needs hardened auth, payment integration, and
-> the usual operational ownership. A prototype is evidence, not production
-> readiness.
+> no money. Real production still needs hardened authentication, payment
+> integration, and the usual operational ownership. This prototype is evidence,
+> but production readiness requires more work to cover the gaps, which are
+> covered in this section.
 
 ### 4:15–4:50 — Recommendation and close
 
