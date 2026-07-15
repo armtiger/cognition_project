@@ -96,9 +96,6 @@ items.]*
 > version-controlled policy that the API enforces: the permission matrix, state
 > transitions, and refund threshold.
 
-> As I walk through it, watch for explicit workflows, contextual permissions,
-> traceable decisions, and server-enforced security.
-
 ### 1:30–2:10 — KYC: controlled state transitions
 
 *[Switch to Carlos Diaz · compliance, then open KYC Review.]*
@@ -109,9 +106,8 @@ items.]*
 *[Point to Jordan Blake: status Pending, risk 82. Point out that the only actions
 are Start review and Escalate. Click Start review, then Approve.]*
 
-> On this pending case there is no Approve or Reject action. Carlos must start
-> review first. Once the case is in review, approval becomes available, and the
-> case can move to its finished state.
+> Once the case is in review, approval becomes available, and the case can move
+> to its finished state.
 
 *[Optionally click Escalate on Nadia Ivanova, show the required-reason prompt,
 then cancel it.]*
@@ -129,7 +125,7 @@ then cancel it.]*
 *[On Jordan Blake, $42 requested by Sam, click Approve.]*
 
 > Sam requested this refund, so the server returns
-> `REQUESTER_CANNOT_APPROVE` and leaves it unchanged.
+> `REQUESTER_CANNOT_APPROVE` and leaves it unchanged when he tries to approve.
 
 *[On Mina Patel, $1,299 requested by Ana, click Approve.]*
 
@@ -139,9 +135,9 @@ then cancel it.]*
 *[Switch to Ana Ramirez · admin. On Aya Suzuki, $630 requested by Sam, click
 Approve, then click Mark processed.]*
 
-> Ana is an admin and a different approver, so she can approve this $630 request,
-> which is above the threshold. Processing is a separate action, and only after
-> approval can she mark it processed.
+> Ana is an admin, so she can approve this $630 request, which is above the
+> threshold. Processing is a separate action, and only after approval can she
+> mark it processed.
 
 ### 2:55–3:30 — Feature flags and auditability
 
@@ -159,10 +155,10 @@ that each environment toggles independently.]*
 staging rollout again and save. Return to the second tab, which still holds the
 older version, and try to save a change.]*
 
-> Writes are guarded against collisions. This second tab is still holding the
-> previous version, so the server rejects it with a stale-version conflict rather
-> than silently overwriting the first edit. Two admins can never quietly clobber
-> each other’s changes.
+> Writes are guarded against collisions. After a change was made in a parallel
+> session, this second tab is still holding the previous version. So the server
+> rejects it with a stale-version conflict rather than silently overwriting the
+> first edit.
 
 *[Open Audit Log.]*
 
