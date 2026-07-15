@@ -150,9 +150,6 @@ processed.]*
 *[On `instant_refunds`, toggle Production on. Pause on the confirmation dialog,
 then accept it. Set Staging rollout to 25 and press Enter. Open Audit Log.]*
 
-> Enabling production requires confirmation. The staging rollout accepts 25,
-> while the API rejects percentages outside zero to one hundred.
->
 > In the audit log, both changes appear as actor-attributed records with
 > structured before-and-after values. The earlier refund denials are logged too,
 > including the policy code and amount.
