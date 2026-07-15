@@ -201,20 +201,19 @@ older version, and try to save a change.]*
 
 *[Stay on the architecture summary or return to talking head.]*
 
-> My recommendation is not to replace Retool wholesale, and not to treat the
-> price as a gradual dial. Migration can be incremental. Start with feature
-> flags. They carry no customer data and no money, so you can build them
-> internally while KYC and refunds stay on Retool.
+> My recommendation is not to replace Retool wholesale. Migration can be
+> incremental — start with feature flags. They carry no customer data and no
+> money, so you can build them internally while KYC and refunds stay on Retool.
 >
 > Single sign-on with automatic deprovisioning is Enterprise-only, and it applies
 > to the whole workspace. You cannot buy it for KYC alone. So as long as any
-> sensitive app stays on Retool, you stay on Enterprise.
+> sensitive app stays on Retool, you might have to stay on Enterprise.
 >
 > The real saving comes only after KYC and refunds have both moved onto the
 > internal build. Migrate KYC last, because of its regulatory exposure. Then you
-> either leave Retool entirely, or downgrade to Business for the low-risk apps
-> that remain. The downgrade alone takes a 250-person company from about
-> $250,000 a year to somewhere between $25,000 and $50,000, depending on the
+> either leave Retool entirely, or downgrade to Business for low-risk apps. The
+> downgrade alone takes a 250-person company from about $250,000 a year to
+> somewhere between $25,000 and $50,000, depending on the
 > number of builders and standard users. Owning it also means no lock-in and
 > native integration with your own systems — not just a lower bill.
 >
