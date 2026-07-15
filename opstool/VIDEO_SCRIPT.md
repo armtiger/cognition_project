@@ -147,12 +147,26 @@ processed.]*
 
 > Feature flags prove controlled, validated, and traceable operational change.
 
-*[On `instant_refunds`, toggle Production on. Pause on the confirmation dialog,
-then accept it. Set Staging rollout to 25 and press Enter. Open Audit Log.]*
+*[On `instant_refunds`, enable Staging, then set Staging rollout to 25. Point out
+that each environment toggles independently.]*
 
-> In the audit log, both changes appear as actor-attributed records with
-> structured before-and-after values. The earlier refund denials are logged too,
-> including the policy code and amount.
+> Each environment is controlled on its own, so you can ship to staging without
+> touching production.
+
+*[Open the same flag in a second tab, still as Ana. In the first tab, change the
+staging rollout again and save. Return to the second tab, which still holds the
+older version, and try to save a change.]*
+
+> Writes are guarded against collisions. This second tab is still holding the
+> previous version, so the server rejects it with a stale-version conflict rather
+> than silently overwriting the first edit. Two admins can never quietly clobber
+> each other’s changes.
+
+*[Open Audit Log.]*
+
+> And every change is traceable. In the audit log each edit is an
+> actor-attributed record with structured before-and-after values. The earlier
+> refund denials are logged too, including the policy code and amount.
 
 ### 3:30–3:50 — Least privilege
 
@@ -249,13 +263,18 @@ Use a fresh database before every complete take.
 ## Feature flags and audit
 
 20. Open **Feature Flags**.
-21. On `instant_refunds`, toggle **Production** on.
-22. Pause on `Enable instant_refunds in production?`, then confirm.
-23. Change **Staging rollout** from 0 to **25** and press Enter.
+21. On `instant_refunds`, enable **Staging**.
+22. Change **Staging rollout** from 0 to **25** and press Enter.
+23. Concurrency demo (two browser tabs, both **Ana Ramirez · admin**):
+    - Open `instant_refunds` in a second tab.
+    - In tab 1, change **Staging rollout** to **50** and save.
+    - In tab 2 (still on the older version), change any value and save;
+      pause on the `STALE_VERSION` conflict (`Flag was modified by someone
+      else`).
 24. Open **Audit Log**.
 25. Point to:
-    - `flag.update` for `enabled_prod`, before 0 → after 1;
-    - `flag.update` for `rollout_pct_staging`, before 0 → after 25;
+    - `flag.update` for `enabled_staging`, before 0 → after 1;
+    - `flag.update` for `rollout_pct_staging`, before 0 → after 25 → after 50;
     - Sam’s two denied `refund.approve` records;
     - Ana’s successful refund approval and processing;
     - Carlos’s KYC transitions.
