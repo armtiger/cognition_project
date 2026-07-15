@@ -58,8 +58,6 @@ Do not read the italicized screen directions aloud.
 
 ## TELL — 0:00–1:10 — Context, hypothesis, and what to watch for
 
-*[Screen: talking head]*
-
 > Hi, I’m Tigran, a deployed engineer at Cognition. Before this, I spent six
 > years in AI product and research roles at fintech startups—as a founder and
 > as head of research— and before that I worked five years at institutional hedge funds.
@@ -71,9 +69,6 @@ Do not read the italicized screen directions aloud.
 > Retool to support three apps: KYC review, refunds, and feature-flag admin.
 > I’m excited to help you evaluate whether you could own those applications
 > internally, with Devin changing the economics of the build.
-
-*[Screen: Retool pricing page, showing the Business and Enterprise line
-items.]*
 
 > Retool’s value goes beyond app construction. This pricing page shows the
 > harder-to-replace features of the platform. Business includes audit logging, rich
@@ -89,51 +84,31 @@ items.]*
 
 ### 1:10–1:30 — KYC: controlled state transitions
 
-*[Switch to the Policy page. Point to the $500 refund threshold, KYC cutoff of
-70, permission matrix, and state machines.]*
-
 > Here, these are not decorative values. The page renders the same
 > version-controlled policy that the API enforces: the permission matrix, state
 > transitions, and refund threshold.
 
 ### 1:30–2:10 — KYC: controlled state transitions
 
-*[Switch to Carlos Diaz · compliance, then open KYC Review.]*
-
 > First, let's review KYC. One rule here is that new cases cannot get approved or
 > rejected right away. The reviewer can either start a review or escalate.
 
-*[Point to Jordan Blake: status Pending, risk 82. Point out that the only actions
-are Start review and Escalate. Click Start review, then Approve.]*
-
 > Once the case is in review, approval becomes available, and the case can move
 > to its finished state.
-
-*[Optionally click Escalate on Nadia Ivanova, show the required-reason prompt,
-then cancel it.]*
 
 > Escalation and rejection also require an attributed reason. The UI prompts for
 > it, and the API independently rejects an empty note.
 
 ### 2:10–2:55 — Refunds: maker-checker and threshold policy
 
-*[Switch to Sam Okoro · support and open Refunds.]*
-
 > Refunds prove two contextual rules: no self-approval, and amounts above five
 > hundred dollars require an admin.
-
-*[On Jordan Blake, $42 requested by Sam, click Approve.]*
 
 > Sam requested this refund, so the server returns
 > `REQUESTER_CANNOT_APPROVE` and leaves it unchanged when he tries to approve.
 
-*[On Mina Patel, $1,299 requested by Ana, click Approve.]*
-
 > This request was created by somebody else, but it exceeds the threshold. Sam
 > is still blocked with `ADMIN_APPROVAL_REQUIRED`.
-
-*[Switch to Ana Ramirez · admin. On Aya Suzuki, $630 requested by Sam, click
-Approve, then click Mark processed.]*
 
 > Ana is an admin, so she can approve this $630 request, which is above the
 > threshold. Processing is a separate action, and only after approval can she
@@ -141,26 +116,15 @@ Approve, then click Mark processed.]*
 
 ### 2:55–3:30 — Feature flags and auditability
 
-*[Open Feature Flags, still as Ana.]*
-
 > Feature flags prove controlled, validated, and traceable operational change.
-
-*[On `instant_refunds`, enable Staging, then set Staging rollout to 25. Point out
-that each environment toggles independently.]*
 
 > Each environment is controlled on its own, so you can ship to staging without
 > touching production.
-
-*[Open the same flag in a second tab, still as Ana. In the first tab, change the
-staging rollout again and save. Return to the second tab, which still holds the
-older version, and try to save a change.]*
 
 > Writes are guarded against collisions. After a change was made in a parallel
 > session, this second tab is still holding the previous version. So the server
 > rejects it with a stale-version conflict rather than silently overwriting the
 > first edit.
-
-*[Open Audit Log.]*
 
 > And every change is traceable. The audit log is append-only, so records can be
 > added but never edited or deleted. Each edit is an actor-attributed record with
@@ -168,8 +132,6 @@ older version, and try to save a change.]*
 > including the policy code and amount.
 
 ### 3:30–3:50 — Least privilege
-
-*[Switch to Vera Lin · viewer. Open KYC, then Feature Flags.]*
 
 > Finally, a viewer should see only what their job requires.
 
@@ -180,8 +142,6 @@ older version, and try to save a change.]*
 ## TELL — 3:50–4:50 — What the evidence means
 
 ### 3:50–4:15 — Honest production assessment
-
-*[Switch to `ARCHITECTURE_SUMMARY.md`, production-gap table.]*
 
 > So what did this prove? We reproduced the three apps’ screens, workflow rules,
 > permissions, approval controls, and audit history.
@@ -194,8 +154,6 @@ older version, and try to save a change.]*
 > covered in this section.
 
 ### 4:15–4:50 — Recommendation and close
-
-*[Stay on the architecture summary or return to talking head.]*
 
 > My recommendation is not to replace Retool wholesale. Migration can be
 > incremental — start with feature flags. They carry no customer data and no
