@@ -76,9 +76,9 @@ Do not read the italicized screen directions aloud.
 > OIDC single sign on, source control, and independent workspaces. Those
 > governance and operational capabilities are what a custom build must replace.
 >
-> I will now demo a protortype built with Devin that tests whether these
-> three fixed workflows can be custom-built with controls enforced server-side.
-> The demo does not claim to recreate all of the required features. 
+> I will now demo an app built with Devin in a few hours from a defined scope and
+> architecture spec. It's a prototype of the three workflows you run on Retool,
+> with their governance controls enforced server-side.
 
 ## SHOW — 1:10–3:50 — One continuous product walkthrough
 
