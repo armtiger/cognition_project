@@ -78,7 +78,7 @@ items.]*
 > Retool’s value goes beyond app construction. This pricing page shows the
 > harder-to-replace features of the platform. Business includes audit logging, rich
 > permissions, and unlimited environments and modules. Enterprise adds SAML or
-> OIDC single sign on, source control, independent workspaces. Those
+> OIDC single sign on, source control, and independent workspaces. Those
 > governance and operational capabilities are what a custom build must replace.
 >
 > I will now demo a protortype built with Devin that tests whether these
@@ -206,17 +206,17 @@ older version, and try to save a change.]*
 > flags. They carry no customer data and no money, so you can build them
 > internally while KYC and refunds stay on Retool.
 >
-> But the cost saving is a single cliff, not a slider. Single sign-on with
-> automatic deprovisioning is Enterprise-only, and it applies to the whole
-> workspace. You cannot buy it for KYC alone. So as long as any sensitive app
-> stays on Retool, you stay on Enterprise.
+> Single sign-on with automatic deprovisioning is Enterprise-only, and it applies
+> to the whole workspace. You cannot buy it for KYC alone. So as long as any
+> sensitive app stays on Retool, you stay on Enterprise.
 >
 > The real saving comes only after KYC and refunds have both moved onto the
 > internal build. Migrate KYC last, because of its regulatory exposure. Then you
 > either leave Retool entirely, or downgrade to Business for the low-risk apps
 > that remain. The downgrade alone takes a 250-person company from about
 > $250,000 a year to somewhere between $25,000 and $50,000, depending on the
-> number of builders and standard users.
+> number of builders and standard users. Owning it also means no lock-in and
+> native integration with your own systems — not just a lower bill.
 >
 > Devin lowers the cost and time to build. It does not lower the responsibility
 > for security, support, and operations. That is the real build-versus-buy
