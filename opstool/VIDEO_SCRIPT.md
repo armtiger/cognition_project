@@ -108,9 +108,8 @@ Do not read the italicized screen directions aloud.
 > This request was created by somebody else, but it exceeds the threshold. Sam
 > is still blocked with `ADMIN_APPROVAL_REQUIRED`.
 
-> Ana is an admin, so she can approve this $630 request, which is above the
-> threshold. Processing is a separate action, and only after approval can she
-> mark it processed.
+> Ana is an admin, so she can approve requests over $500. Processing is a separate
+> action, and only after approval can she mark it processed.
 
 ### 2:55–3:30 — Feature flags and auditability
 
