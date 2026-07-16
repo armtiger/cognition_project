@@ -58,21 +58,19 @@ Do not read the italicized screen directions aloud.
 
 ## TELL — 0:00–1:10 — Context, hypothesis, and what to watch for
 
-> Hi, I’m Tigran, a deployed engineer at Cognition, the company building the AI
-> software engineer Devin used at institutions including Goldman Sachs and Citi.
-> Before this I spent ten years building AI products and workflows at fintech
-> startups and hedge funds.
+> Hi, I’m Tigran, a deployed engineer at Cognition, the company building Devin.
 >
-> In our last meeting you mentioned you currently spend about $250,000 a year on
-> Retool to support three apps: KYC review, refunds, and feature-flag admin.
-> I’m excited to help you evaluate whether you could own those applications
-> internally, with Devin changing the economics of the build.
-
-> Retool’s value goes beyond app construction. This pricing page shows the
-> harder-to-replace features of the platform. Business includes audit logging, rich
-> permissions, and unlimited environments and modules. Enterprise adds SAML or
-> OIDC single sign on, source control, and independent workspaces. Those
-> governance and operational capabilities are what a custom build must replace.
+> Before joining Cognition, I spent ten years building AI products and workflows
+> at fintech startups and hedge funds, and I'm excited to help you with the buy
+> vs build trade-off you mentioned in our last meeting.
+>
+> You currently spend about $250,000 a year on Retool to support three apps: KYC
+> review, refunds, and feature-flag admin. Retool’s value goes beyond app
+> construction. This pricing page shows the harder-to-replace features of the
+> platform. Business includes audit logging, rich permissions, and unlimited
+> environments and modules. Enterprise adds SAML or OIDC single sign on, source
+> control, and independent workspaces. Those governance and operational
+> capabilities are what a custom build must replace.
 >
 > I will now demo an app built with Devin in a few hours from a defined scope and
 > architecture spec. It's a prototype of the three workflows you run on Retool,
