@@ -29,7 +29,7 @@
 
 ---
 
-### The trade-off (be honest about it)
+### The trade-off
 
 | You gain | You take on |
 |----------|-------------|
