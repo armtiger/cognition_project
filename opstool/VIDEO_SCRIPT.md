@@ -91,7 +91,7 @@ Do not read the italicized screen directions aloud.
 > He must either start a review or escalate. Once the case is in review, approval
 > becomes available, and the case can move to its finished state.
 
-> Escalation and rejection also require an attributed reason. The UI prompts for
+> Escalation and rejection require an attributed reason. The UI prompts for
 > it, and the API independently rejects an empty note.
 
 ### 2:10–2:55 — Refunds: maker-checker and threshold policy
