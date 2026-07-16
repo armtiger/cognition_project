@@ -156,29 +156,23 @@ Do not read the italicized screen directions aloud.
 
 ### 4:15–4:50 — Recommendation and close
 
-> My recommendation is not to replace Retool wholesale. Migration can be
-> incremental — start with feature flags. They carry no customer data and no
-> money, so you can build them internally while KYC and refunds stay on Retool.
+> My recommendation isn't to replace Retool wholesale — migrate incrementally.
+> Start with feature flags: they carry no customer data and no money, so you can
+> build them internally while KYC and refunds stay on Retool.
 >
-> Single sign-on with automatic deprovisioning is Enterprise-only and applies to
-> the whole workspace, not per app. So as long as any sensitive app stays on
-> Retool, you might have to stay on Enterprise.
+> But the real saving only lands once every sensitive app is off Retool. Single
+> sign-on with automatic deprovisioning is Enterprise-only and workspace-wide, so
+> a single sensitive app keeps you on Enterprise. Move KYC last, given its
+> regulatory exposure — then either leave Retool entirely or drop to Business for
+> the low-risk apps, taking you from about $250,000 a year to roughly $25,000 to
+> $50,000.
 >
-> The real saving comes only after KYC and refunds have both moved onto the
-> internal build. Migrate KYC last, because of its regulatory exposure. Then you
-> either leave Retool entirely, or downgrade to Business for low-risk apps. The
-> downgrade would take your company from about $250,000 a year to somewhere
-> between $25,000 and $50,000, depending on the number of builders and standard
-> users.
->
-> In conclusion, ownership of your apps does shift the responsibility for
-> security, support, and operations onto you. If you're ok with that, Devin can
-> help lower your cost significantly while reducing the developer time to build
-> and maintain your apps. Ownership also means native integration with your own
-> systems and no lock-in to a third-party vendor. If you decide to pursue that
-> path, we at Cognition are committed to helping you along the way.
->
-> Thank you for your attention. I hope this was useful.
+> Ownership does shift the responsibility for security, support, and operations
+> onto you. If you're OK with that, Devin can reduce both your cost and the
+> developer time to build and maintain these apps, with the added benefits of
+> native integration to your own systems and no vendor lock-in. If you want to
+> pursue it, we at Cognition are here to help. Thank you for your time, I hope
+> this was helpful.
 
 ---
 
