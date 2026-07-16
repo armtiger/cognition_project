@@ -108,8 +108,7 @@ Do not read the italicized screen directions aloud.
 > This request was created by somebody else, but it exceeds the threshold. Sam
 > is still blocked with `ADMIN_APPROVAL_REQUIRED`.
 
-> Ana is an admin, so she can approve requests over $500. Processing is a separate
-> action, and only after approval can she mark it processed.
+> Ana is an admin, so she can approve requests over $500.
 
 ### 2:55–3:30 — Feature flags and auditability
 
@@ -208,9 +207,8 @@ Use a fresh database before every complete take.
 15. On **Mina Patel**, **$1,299.00**, requested by Ana, click **Approve**.
 16. Pause on `ADMIN_APPROVAL_REQUIRED`; status remains Requested.
 17. Switch persona to **Ana Ramirez · admin**.
-18. On **Aya Suzuki**, **$630.00**, requested by Sam, click **Approve**, then
-    **Mark processed**.
-19. Confirm status **Processed** and Processed count increases from 1 to 2.
+18. On **Aya Suzuki**, **$630.00**, requested by Sam, click **Approve**.
+19. Confirm status **Approved**.
 
 ## Feature flags and audit
 
@@ -228,7 +226,7 @@ Use a fresh database before every complete take.
     - `flag.update` for `enabled_staging`, before 0 → after 1;
     - `flag.update` for `rollout_pct_staging`, before 0 → after 25 → after 50;
     - Sam’s two denied `refund.approve` records;
-    - Ana’s successful refund approval and processing;
+    - Ana’s successful refund approval;
     - Carlos’s KYC transitions.
 
 ## Viewer
