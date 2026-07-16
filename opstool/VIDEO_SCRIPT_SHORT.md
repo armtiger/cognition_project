@@ -1,14 +1,14 @@
 # OpsTool — Five-Minute Demo Script (Short Cut)
 
 **Audience:** VP Engineering / technical leadership at a Series C fintech
-**Target duration:** 4:00–4:20
-**Spoken length:** approximately 585 words; about 3:45–4:05 with clicks and pauses
+**Target duration:** 4:05–4:25
+**Spoken length:** approximately 675 words; about 3:55–4:15 with clicks and pauses
 **Structure:** one overarching Tell → Show → Tell arc
 
-This is a trimmed version of `VIDEO_SCRIPT.md` (~20% less narration) for a more
-relaxed pace. It drops the two-tab concurrency demo, the per-environment
-isolation aside, the KYC reason-required aside, and tightens the Policy opener
-and honest-assessment close. Do not read the italicized screen directions aloud.
+This is a trimmed version of `VIDEO_SCRIPT.md` (~10% less narration) for a more
+relaxed pace. It drops the two-tab concurrency demo and the per-environment
+isolation aside, and tightens the Policy opener and honest-assessment close. Do
+not read the italicized screen directions aloud.
 
 ## Before recording
 
@@ -79,21 +79,24 @@ and honest-assessment close. Do not read the italicized screen directions aloud.
 > architecture spec. It's a prototype of the three workflows you run on Retool,
 > with their governance controls enforced server-side.
 
-## SHOW — 1:10–3:20 — One continuous product walkthrough
+## SHOW — 1:10–3:25 — One continuous product walkthrough
 
 ### 1:10–1:25 — Policy: rules as code
 
 > This page renders the same version-controlled policy the API enforces — the
 > permission matrix, state transitions, and refund threshold.
 
-### 1:25–1:55 — KYC: controlled state transitions
+### 1:25–2:00 — KYC: controlled state transitions
 
 > First, let's review KYC. Carlos, who works in compliance, is on the KYC
 > dashboard. One rule here is that he cannot approve or reject cases right away.
 > He must either start a review or escalate. Once the case is in review, approval
 > becomes available, and the case can move to its finished state.
 
-### 1:55–2:35 — Refunds: maker-checker and threshold policy
+> Escalation and rejection require an attributed reason. The UI prompts for
+> it, and the API independently rejects an empty note.
+
+### 2:00–2:40 — Refunds: maker-checker and threshold policy
 
 > Next, let's navigate to the refunds dashboard in the profile of Sam from
 > support. The build has two contextual rules: no self-approval, and amounts
@@ -107,7 +110,7 @@ and honest-assessment close. Do not read the italicized screen directions aloud.
 
 > Ana is an admin, so she can approve requests over $500.
 
-### 2:35–3:00 — Feature flags and auditability
+### 2:40–3:05 — Feature flags and auditability
 
 > Next, let's navigate to the feature flags dashboard. This workflow enforces
 > controlled, validated, and traceable operational change.
@@ -120,7 +123,7 @@ and honest-assessment close. Do not read the italicized screen directions aloud.
 > before-and-after values. The earlier refund denials are logged as well,
 > including the policy code and amount.
 
-### 3:00–3:20 — Least privilege
+### 3:05–3:25 — Least privilege
 
 > Finally, sensitive information should only be exposed to users who need that
 > information for their job.
@@ -129,9 +132,9 @@ and honest-assessment close. Do not read the italicized screen directions aloud.
 > the dashboards return a server-side 403 rather than exposing confidential data
 > to the user.
 
-## TELL — 3:20–4:15 — What the evidence means
+## TELL — 3:25–4:25 — What the evidence means
 
-### 3:20–3:40 — Honest production assessment
+### 3:25–3:45 — Honest production assessment
 
 > So what did this prove? We reproduced the three apps’ screens, workflow rules,
 > permissions, approval controls, and audit history.
@@ -141,7 +144,7 @@ and honest-assessment close. Do not read the italicized screen directions aloud.
 > no money. Real production still needs hardened authentication, payment
 > integration, and the usual operational ownership.
 
-### 3:40–4:15 — Recommendation and close
+### 3:45–4:25 — Recommendation and close
 
 > My recommendation isn't to replace Retool wholesale — migrate incrementally.
 > Start with feature flags: they carry no customer data and no money, so you can
@@ -238,8 +241,8 @@ Use a fresh database before every complete take.
 - **Verify pricing before recording:** the estimate assumes current annual
   Business list prices of $50 per builder and $15 per internal user.
 - **If under time:** pause longer on the audit log and explicitly connect each
-  row to the action just demonstrated, or restore the KYC reason-required aside
-  from the full script.
+  row to the action just demonstrated, or restore the per-environment isolation
+  aside from the full script.
 - **Use one macro arc:** the opening 70 seconds tells the audience the question
   and evaluation criteria; the middle is one uninterrupted show; the final
   stretch tells them what the evidence means and gives the recommendation.
