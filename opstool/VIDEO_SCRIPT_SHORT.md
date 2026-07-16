@@ -108,8 +108,6 @@ not read the italicized screen directions aloud.
 > This request was created by somebody else, but it exceeds the threshold. Sam
 > is still blocked with `ADMIN_APPROVAL_REQUIRED`.
 
-> Ana is an admin, so she can approve requests over $500.
-
 ### 2:40–3:05 — Feature flags and auditability
 
 > Next, let's navigate to the feature flags dashboard. This workflow enforces
