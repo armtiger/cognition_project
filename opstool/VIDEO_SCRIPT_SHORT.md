@@ -188,26 +188,28 @@ Use a fresh database before every complete take.
 7. Point out **Start review** and **Escalate**, with no direct Approve/Reject.
 8. Click **Start review**; wait for status **In review**.
 9. Click **Approve**; wait for status **Approved** and action **Completed**.
+10. On **Nadia Ivanova**, click **Escalate**; pause on the reason-required
+    prompt (showing the note is mandatory), then cancel. Nadia remains Pending.
 
 ## Refunds
 
-10. Switch persona to **Sam Okoro · support**.
-11. Open **Refunds**.
-12. On **Jordan Blake**, **$42.00**, requested by Sam, click **Approve**.
-13. Pause on `REQUESTER_CANNOT_APPROVE`; status remains Requested.
-14. On **Mina Patel**, **$1,299.00**, requested by Ana, click **Approve**.
-15. Pause on `ADMIN_APPROVAL_REQUIRED`; status remains Requested.
-16. Switch persona to **Ana Ramirez · admin**.
-17. On **Aya Suzuki**, **$630.00**, requested by Sam, click **Approve**.
-18. Confirm status **Approved**.
+11. Switch persona to **Sam Okoro · support**.
+12. Open **Refunds**.
+13. On **Jordan Blake**, **$42.00**, requested by Sam, click **Approve**.
+14. Pause on `REQUESTER_CANNOT_APPROVE`; status remains Requested.
+15. On **Mina Patel**, **$1,299.00**, requested by Ana, click **Approve**.
+16. Pause on `ADMIN_APPROVAL_REQUIRED`; status remains Requested.
+17. Switch persona to **Ana Ramirez · admin**.
+18. On **Aya Suzuki**, **$630.00**, requested by Sam, click **Approve**.
+19. Confirm status **Approved**.
 
 ## Feature flags and audit
 
-19. Open **Feature Flags**.
-20. On `instant_refunds`, enable **Staging**.
-21. Change **Staging rollout** from 0 to **25** and press Enter.
-22. Open **Audit Log**.
-23. Point to:
+20. Open **Feature Flags**.
+21. On `instant_refunds`, enable **Staging**.
+22. Change **Staging rollout** from 0 to **25** and press Enter.
+23. Open **Audit Log**.
+24. Point to:
     - `flag.update` for `enabled_staging`, before 0 → after 1;
     - `flag.update` for `rollout_pct_staging`, before 0 → after 25;
     - Sam’s two denied `refund.approve` records;
@@ -216,16 +218,16 @@ Use a fresh database before every complete take.
 
 ## Viewer
 
-24. Switch persona to **Vera Lin · viewer**.
-25. Open **KYC Review**; pause on `403 PERMISSION_DENIED`.
-26. Open **Refunds**; pause on `403 PERMISSION_DENIED`.
-27. Open **Feature Flags**; point to **READ ONLY** and disabled inputs.
-28. Open **Policy**; show that governance remains visible.
+25. Switch persona to **Vera Lin · viewer**.
+26. Open **KYC Review**; pause on `403 PERMISSION_DENIED`.
+27. Open **Refunds**; pause on `403 PERMISSION_DENIED`.
+28. Open **Feature Flags**; point to **READ ONLY** and disabled inputs.
+29. Open **Policy**; show that governance remains visible.
 
 ## Architecture and recommendation
 
-29. Switch to the second tab with `ARCHITECTURE_SUMMARY.md`.
-30. Point to the production-gap table while delivering the final assessment.
+30. Switch to the second tab with `ARCHITECTURE_SUMMARY.md`.
+31. Point to the production-gap table while delivering the final assessment.
 
 ---
 
