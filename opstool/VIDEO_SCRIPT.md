@@ -58,12 +58,10 @@ Do not read the italicized screen directions aloud.
 
 ## TELL — 0:00–1:10 — Context, hypothesis, and what to watch for
 
-> Hi, I’m Tigran, a deployed engineer at Cognition. Before this, I spent six
-> years in AI product and research roles at fintech startups—as a founder and
-> as head of research— and before that I worked five years at institutional hedge funds.
->
-> For anyone new here, Cognition builds Devin, the AI software engineer used at
-> institutions including Goldman Sachs and Citi.
+> Hi, I’m Tigran, a deployed engineer at Cognition, the company building the AI
+> software engineer Devin used at institutions including Goldman Sachs and Citi.
+> Before this I spent ten years building AI products and workflows at fintech
+> startups and hedge funds.
 >
 > In our last meeting you mentioned you currently spend about $250,000 a year on
 > Retool to support three apps: KYC review, refunds, and feature-flag admin.
@@ -161,12 +159,12 @@ Do not read the italicized screen directions aloud.
 > Start with feature flags: they carry no customer data and no money, so you can
 > build them internally while KYC and refunds stay on Retool.
 >
-> But the real saving only lands once every sensitive app is off Retool. Single
-> sign-on with automatic deprovisioning is Enterprise-only and workspace-wide, so
-> a single sensitive app keeps you on Enterprise. Move KYC last, given its
-> regulatory exposure — then either leave Retool entirely or drop to Business for
-> the low-risk apps, taking you from about $250,000 a year to roughly $25,000 to
-> $50,000.
+> The real saving comes once every sensitive app is off Retool. Single sign-on
+> with automatic deprovisioning is Enterprise-only and workspace-wide, so a single
+> sensitive app keeps you on Enterprise. Move KYC last, given its regulatory
+> exposure. Then either leave Retool entirely or drop to Business for the low-risk
+> apps, taking you from $250K a year to roughly $25K to $50K depending on the
+> number of builders and users.
 >
 > Ownership does shift the responsibility for security, support, and operations
 > onto you. If you're OK with that, Devin can reduce both your cost and the
