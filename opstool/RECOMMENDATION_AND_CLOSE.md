@@ -1,20 +1,45 @@
-# Recommendation & Close
+# Recommendation: Migrate Incrementally, Not Wholesale
 
-_4:15–4:50_
+> **Don't rip out Retool. Move one workflow at a time — starting with the lowest-risk one.**
 
-My recommendation isn't to replace Retool wholesale — migrate incrementally.
-Start with feature flags: they carry no customer data and no money, so you can
-build them internally while KYC and refunds stay on Retool.
+---
 
-The real saving comes once every sensitive app is off Retool. Single sign-on
-with automatic deprovisioning is Enterprise-only and workspace-wide, so a single
-sensitive app keeps you on Enterprise. Move KYC last, given its regulatory
-exposure. Then either leave Retool entirely or drop to Business for the low-risk
-apps, taking you from $250K a year to roughly $25K to $50K depending on the
-number of builders and users.
+### The path
 
-Ownership does shift the responsibility for security, support, and operations
-onto you. If you're OK with that, Devin can reduce both your cost and the
-developer time to build and maintain these apps, with the added benefits of
-native integration to your own systems and no vendor lock-in. Either way, we at
-Cognition are here to help. Thank you for your time, I hope this was helpful.
+| Step | Move | Why this order |
+|------|------|----------------|
+| **1. Start** | Feature flags | No customer data, no money — safe to build internally first |
+| **2. Then** | Refunds | Money movement, but bounded and well-understood |
+| **3. Last** | KYC | Highest regulatory exposure — move it once the pattern is proven |
+
+*KYC and refunds stay on Retool while you build.*
+
+---
+
+### Where the savings come from
+
+```
+   Today: ~$250K / year   ──────▶   After migration: ~$25K–$50K / year
+```
+
+- Savings land **only once every sensitive app is off Retool.**
+- SSO with automatic deprovisioning is **Enterprise-only and workspace-wide** — a *single* sensitive app keeps the whole workspace on Enterprise.
+- Endgame: **leave Retool entirely**, or **drop to Business** for the low-risk apps.
+- Final range depends on the number of builders and users.
+
+---
+
+### The trade-off (be honest about it)
+
+| You gain | You take on |
+|----------|-------------|
+| Lower cost | Security ownership |
+| Less build & maintenance time | Support ownership |
+| Native integration with your systems | Operations ownership |
+| No vendor lock-in | |
+
+---
+
+> **If you're OK owning security, support, and operations, Devin can cut both cost and developer time to build and maintain these apps.**
+>
+> Either way, we at Cognition are here to help.
