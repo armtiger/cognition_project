@@ -116,8 +116,8 @@ Do not read the italicized screen directions aloud.
 
 ### 2:55–3:30 — Feature flags and auditability
 
-> Next, the feature flags workflow enforces controlled, validated, and traceable
-> operational change.
+> Next, let's navigate to the feature flags dashboard. This workflow enforces
+> controlled, validated, and traceable operational change.
 
 > Each environment is controlled on its own, so you can ship to staging without
 > touching production.
@@ -137,8 +137,9 @@ Do not read the italicized screen directions aloud.
 > Finally, sensitive information should only be exposed to users who need that
 > information for their job.
 
-> Here, KYC and Refunds return a server-side 403 rather than exposing confidential
-> data to the user, and feature flags cannot be edited.
+> Here, Vera does not need to work with KYC and refunds data for her job, hence
+> the dashboards return a server-side 403 rather than exposing confidential data
+> to the user.
 
 ## TELL — 3:50–4:50 — What the evidence means
 
@@ -170,9 +171,8 @@ Do not read the italicized screen directions aloud.
 > Ownership does shift the responsibility for security, support, and operations
 > onto you. If you're OK with that, Devin can reduce both your cost and the
 > developer time to build and maintain these apps, with the added benefits of
-> native integration to your own systems and no vendor lock-in. If you want to
-> pursue it, we at Cognition are here to help. Thank you for your time, I hope
-> this was helpful.
+> native integration to your own systems and no vendor lock-in. Either way, we at
+> Cognition are here to help. Thank you for your time, I hope this was helpful.
 
 ---
 
